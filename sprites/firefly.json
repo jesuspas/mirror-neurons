@@ -2,35 +2,35 @@
 
 "firefly0000":
 {
-	"frame": {"x":0,"y":0,"w":700,"h":700},
+	"frame": {"x":0,"y":0,"w":350,"h":350},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":700,"h":700},
-	"sourceSize": {"w":700,"h":700}
+	"spriteSourceSize": {"x":0,"y":0,"w":350,"h":350},
+	"sourceSize": {"w":350,"h":350}
 },
 "firefly0001":
 {
-	"frame": {"x":700,"y":0,"w":700,"h":700},
+	"frame": {"x":350,"y":0,"w":350,"h":350},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":700,"h":700},
-	"sourceSize": {"w":700,"h":700}
+	"spriteSourceSize": {"x":0,"y":0,"w":350,"h":350},
+	"sourceSize": {"w":350,"h":350}
 },
 "firefly0002":
 {
-	"frame": {"x":0,"y":700,"w":700,"h":700},
+	"frame": {"x":0,"y":350,"w":350,"h":350},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":700,"h":700},
-	"sourceSize": {"w":700,"h":700}
+	"spriteSourceSize": {"x":0,"y":0,"w":350,"h":350},
+	"sourceSize": {"w":350,"h":350}
 },
 "firefly0003":
 {
-	"frame": {"x":700,"y":700,"w":700,"h":700},
+	"frame": {"x":350,"y":350,"w":350,"h":350},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":700,"h":700},
-	"sourceSize": {"w":700,"h":700}
+	"spriteSourceSize": {"x":0,"y":0,"w":350,"h":350},
+	"sourceSize": {"w":350,"h":350}
 },
 "firefly0004":
 {
