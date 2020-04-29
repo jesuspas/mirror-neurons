@@ -128,17 +128,28 @@ hasta activarse todas a la vez y contener toda la información
 de lo que hay a tu alrededor ahora mismo.
 </p>
 	
-<p>
-En realidad no es tan simple, hay muchos tipos de neuronas. 
-Por ejemplo, también existen también neuronas inhibitorias 
-(desactivadoras) que impiden que se transmitan los impulsos.
-Debido a que la carga eléctrica se puede sumar o restar, 
-si una neurona inhibitoria resta la carga de las excitatorias, 
-el siguiente impulso no se podrá transmitir.
-</p>
-
 <hr/>
 
+	<!-- TRANSLATE: 'label', 'label-on', and 'label-off' -->
+	<widget type="toggle"
+		id="showClocks"
+		background="#000" color="#fff"
+		background-on="#FEE27F" color-on="#000"
+
+		label="Mostrar reloj:"
+		label-on="ON" label-off="OFF">
+	</widget>
+
+	<!-- TRANSLATE: 'label', 'label-min', and 'label-max' -->
+	<widget type="slider"
+		id="clockSpeed"
+		background="#FEE27F" color="#fff"
+		min="0.2" max="2" step="0.05"
+
+		label="Velocidad del reloj:"
+		label-min="lento" label-max="rápido">
+	</widget>
+	
 	<!-- TRANSLATE: 'label', 'label-min', and 'label-max' -->
 	<widget type="slider"
 		id="numFireflies"
@@ -160,10 +171,6 @@ codifica en un sistema de 16 bytes, necesitaremos unos
 La supercomputadora Summit sólo procesa 500 pentaflops, 
 necesitaríamos 10.000 supercomputadoras para simular un 
 sólo cerebro humano.
-</p>
-
-<p>
-<img src="ui/clock.png" width="350"/>
 </p>
 
 <p>
@@ -246,7 +253,7 @@ Y toca la pantalla para desincronizarlas.
 		background="#000" color="#fff"
 		background-hover="#FEE27F" color-hover="#000"
 
-		label="RESET luciérnagas">
+		label="RESET neuronas">
 	</widget>
 
 	<!-- TRANSLATE: 'label' -->
