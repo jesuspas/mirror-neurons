@@ -62,7 +62,7 @@ Son células que tienen 3 partes bien diferenciadas:
 </p>
 	
 <div style="overflow:hidden;">
-<img src="ui/neuronflechas.png" width="175" style="float"/>
+<img src="ui/neuronflechas.png" width="175" style="float:"/>
 </div>
 	
 <p>
@@ -96,7 +96,7 @@ neurotransmisores, hay de muchos tipos
 <div style="overflow:hidden;">
 	<img src="ui/neuronsinap1.gif" width="175" style="float: left;"/>
 	<img src="ui/neuronsinap2.gif" width="175" style="float: right;"/>
-	<div style="width: 185px; float: right;">
+	<div style="width: 140px; float: right;">
 		<span style="font-size:1.6em; line-height:1.1em;"></span>
 		<br>
 		SINAPSIS
@@ -126,7 +126,7 @@ trasmitir a más neuronas.
 </p>
 	
 <div style="overflow:hidden;">
-<img src="ui/convergerneuron.gif" width="175" style="float"/>
+<img src="ui/convergerneuron.gif" width="175" style="float:"/>
 </div>
 
 <p>
@@ -142,98 +142,11 @@ de lo que hay a tu alrededor ahora mismo.
 
 	<!-- TRANSLATE: 'label', 'label-on', and 'label-off' -->
 	<widget type="toggle"
-		id="showClocks"
-		background="#000" color="#fff"
-		background-on="#FEE27F" color-on="#000"
-
-		label="Mostrar reloj:"
-		label-on="ON" label-off="OFF">
-	</widget>
-
-	<!-- TRANSLATE: 'label', 'label-min', and 'label-max' -->
-	<widget type="slider"
-		id="clockSpeed"
-		background="#FEE27F" color="#fff"
-		min="0.2" max="2" step="0.05"
-
-		label="Velocidad del reloj:"
-		label-min="lento" label-max="rápido">
-	</widget>
-	
-	<!-- TRANSLATE: 'label', 'label-min', and 'label-max' -->
-	<widget type="slider"
-		id="numFireflies"
-		background="#FEE27F" color="#fff"
-		min=10 max=500 step=1
-
-		label="Número de luciérnagas:"
-		label-min="10" label-max="500">
-	</widget>
-
-<hr/>
-
-<p>
-Por suerte, tenemos más de 4 neuronas, aproximadamente
-100.000.000.000.000 neuronas, y cada una recibe unas 
-10.000 conexiones diferentes, si cada conexión se 
-codifica en un sistema de 16 bytes, necesitaremos unos
-200 exaflops para poder igualarla capacidad del cerebro.
-La supercomputadora Summit sólo procesa 500 pentaflops, 
-necesitaríamos 10.000 supercomputadoras para simular un 
-sólo cerebro humano.
-</p>
-
-<p>
-Se podría decir que todo lo que pensamos es un montón 
-de células comunicándose con electricidad y substancias
-químicas. ¿por tanto, si introducimos una substancia
-química en el cerebro modificaremos cómo percibimos 
-la realidad? Correcto, como en el caso de la cafeína o de 
-las drogas estupefacientes, estas substancias modificaran
-la actividad de las neuronas para producir unos efectos
-determinados.
-</p>
-
-<p>
-Hay dos tipos de drogas: las estimulantes, que activan
-la actividad de las neuronas, y las depresoras, que reducen 
-la actividad neuronal. 
-Estimulantes: cocaína, anfetaminas, LSD
-Depresoras: cannabis, alcohol, heroína
-
-Mueve la barra para aumentar o reducir la actividad de las neuronas.
-Y toca la pantalla para desincronizarlas. 
-</p>
-	
-<hr/>
-
-	<!-- TRANSLATE: 'label', 'label-on', and 'label-off' -->
-	<widget type="toggle"
-		id="showClocks"
-		background="#000" color="#fff"
-		background-on="#FEE27F" color-on="#000"
-
-		label="Mostrar reloj:"
-		label-on="ON" label-off="OFF">
-	</widget>
-
-	<!-- TRANSLATE: 'label', 'label-min', and 'label-max' -->
-	<widget type="slider"
-		id="clockSpeed"
-		background="#FEE27F" color="#fff"
-		min="0.2" max="2" step="0.05"
-
-		label="Velocidad del reloj:"
-		label-min="lento" label-max="rápido">
-	</widget>
-
-	<!-- TRANSLATE: 'label', 'label-on', and 'label-off' -->
-	<widget type="toggle"
 		id="neighborNudgeRule"
 		background="#000" color="#fff"
 		background-on="#FEE27F" color-on="#000"
 
-		label="Sigue a tu vecina:"
+		label="RECORDAR:"
 		label-on="ON" label-off="OFF">
 	</widget>
 
@@ -243,21 +156,11 @@ Y toca la pantalla para desincronizarlas.
 		background="#FEE27F" color="#fff"
 		min="0.01" max="0.10" step="0.001"
 
-		label="Cuánto adelanto el reloj:"
-		label-min="un poco" label-max="mucho">
+		label="Velocidad de aprendizaje:"
+		label-min="lento" label-max="rápido">
 	</widget>
 
-	<!-- TRANSLATE: 'label', 'label-min', and 'label-max' -->
-	<widget type="slider"
-		id="neighborRadius"
-		background="#FEE27F" color="#fff"
-		min=50 max=500 step=10
-
-		label="Cuánto de cerca esta tu vecina:"
-		label-min="cerca" label-max="lejos">
-	</widget>
-
-	<!-- TRANSLATE: 'label' -->
+		<!-- TRANSLATE: 'label' -->
 	<widget type="button"
 		id="resetFireflies"
 		background="#000" color="#fff"
@@ -277,18 +180,83 @@ Y toca la pantalla para desincronizarlas.
 
 <hr/>
 
-	
-<div style="overflow:hidden; text-align:center">
-<img src="ui/emergence.png" width="350" style="margin-bottom:25px"/>
-<div style="width:170px; float:left;">
-	<span style="font-size:25px; line-height:10px">Interacciones</span><br><span style="font-size:20px">a pequeña escala</span>
-</div>
-<div style="width:10px; float:left; position:relative; left:-5px; top:7px">&rarr;</div>
-<div style="width:170px; float:left;">
-	<span style="font-size:25px; line-height:10px">Organización</span><br><span style="font-size:20px">a gran escala</span>
-</div>
-</div>
+<p>
+Por suerte, tenemos más de 4 neuronas, aproximadamente
+100.000.000.000.000 neuronas, y cada una recibe unas 
+10.000 conexiones diferentes, si cada conexión se 
+codifica en un sistema de 16 bytes, necesitaremos unos
+200 exaflops para poder igualarla capacidad del cerebro.
+La supercomputadora Summit sólo procesa 500 pentaflops, 
+necesitaríamos 10.000 supercomputadoras para simular un 
+sólo cerebro humano.
+</p>
 
+<p>
+¿Se podría decir que todo lo que pensamos es un montón 
+de células comunicándose con electricidad y substancias
+químicas? Activa los rayos X para ver el interior de laS 
+neuronas.
+</p>
+	
+<hr/>
+
+	<!-- TRANSLATE: 'label', 'label-on', and 'label-off' -->
+	<widget type="toggle"
+		id="showClocks"
+		background="#000" color="#fff"
+		background-on="#FEE27F" color-on="#000"
+
+		label="RAYOS X:"
+		label-on="ON" label-off="OFF">
+	
+	</widget>
+	
+<hr/>
+
+<p>
+¿por tanto, si introducimos una substancia química
+en el cerebro modificaremos cómo percibimos 
+la realidad? Tanto en el caso de la cafeína como en el de 
+las drogas estupefacientes, estas substancias modificaran
+la actividad de las neuronas para producir unos efectos
+determinados.
+</p>
+
+<p>
+Hay dos tipos de drogas: las estimulantes, que activan
+la actividad de las neuronas, y las depresoras, que reducen 
+la actividad neuronal. 
+Estimulantes: cocaína, anfetaminas, LSD
+Depresoras: cannabis, alcohol, heroína
+
+Mueve la barra para aumentar o reducir la actividad de las neuronas.
+Y toca la pantalla para desincronizarlas. 
+</p>
+	
+<hr/>
+
+	<!-- TRANSLATE: 'label', 'label-min', and 'label-max' -->
+	<widget type="slider"
+		id="clockSpeed"
+		background="#FEE27F" color="#fff"
+		min="0.2" max="2" step="0.05"
+
+		label="Estimulación"
+		label-min="Poca" label-max="Mucha">
+	
+	<!-- TRANSLATE: 'label', 'label-min', and 'label-max' -->
+	<widget type="slider"
+		id="neighborRadius"
+		background="#FEE27F" color="#fff"
+		min=50 max=500 step=10
+
+		label="Confusión:"
+		label-min="poca" label-max="mucha">
+		
+	</widget>
+
+<hr/>
+	
 <p>
 	Creado por Jesús Pascual en confinamiento
 </p>
